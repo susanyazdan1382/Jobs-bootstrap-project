@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+
+
+
+
+</head>
+<style>
+
+  .navbar{
+    background-color: #ffffff;
+  }
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #478759;
+}
+.navbar .btn {
+    height: 40px;
+}
+@media(max-width: 992px){
+  .navbar-nav {
+    text-align: center;
+  }
+.navbar.btn{
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+.navbar.scrolled { 
+  box-shadow: 3px 4px 10px rgb(144, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.log{
+  background: transparent;
+  box-shadow:  1px 2px 10px rgb(91, 140, 85);
+  border: none;
+  color: #478759;
+  padding: 6px 10px;
+  border-radius: 30px ;
+  text-decoration: none;
+ 
+}
+
+
+.log:hover{
+  background-color: #629671;
+  color: #f9f9f9;
+
+}
+
+
+.post{
+  background-color: #629671;
+  color: #e9ecef;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+
+}
+.post:hover{
+  box-shadow: 1px 2px 10px rgb(91, 143, 90);
+  background: transparent;
+  color: #478759;
+}
+
+
+
+
+
+header {
+  background-color: #000000;
+  color: #629671;
+}
+
+header button{
+  background: transparent;
+  color: #629671;
+  box-shadow: 1px 2px 10px rgb(76, 130, 76);
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+header button:hover{
+  color: #021d00;
+  background-color: #478759;
+}
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+.b1{
+  background-color: #79b075;
+  color: #ffffff;
+  
+}
+
+
+.b2{
+  background-color: #000000;
+  color: #e9ecef;
+}
+
+.b3{
+  background-color: rgb(85, 206, 15);
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .ico img {
+    transition: transform 0.3s ease;
+  }
+  .ico img:hover {
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+.job-cards{
+  box-shadow:inset 1px 2px 10px rgb(140, 162, 130);
+  border-radius: 10px ;
+}
+
+.job-card {
+  transition:all 0.3s ease;
+  cursor: pointer;
+  background-color: #f9f9f9;
+ 
+}
+.job-card .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  color: #59af4e;
+  flex-shrink: 0;
+}
+.job-card:hover {
+  background-color:rgb(105, 173, 86);
+  color: white;
+}
+.job-card:hover .icon {
+  background-color: white;
+  color: #50c748;
+  transform: scale(1.2) rotate(10deg); 
+}
+.job-card .text h6 {
+  margin: 0;
+  font-weight: 600;
+}
+.job-card .text p {
+  margin: 0;
+}
+
+
+.form-select{
+  /* border: 1px solid rgb(106, 149, 61); */
+  box-shadow: 1px 2px 10px rgb(105, 173, 86);
+  border-radius: 10px 0px 10px 0px;
+  color: #458740;
+}
+
+.bottun button{
+   box-shadow: 1px 2px 10px rgb(105, 173, 86);
+  border-radius: 20px 0px 20px 0px;
+  color: #458740;
+  border: none;
+  padding: 6px 10px;
+}
+
+.bottun button:hover{
+  background-color: #629671;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hir{
+    background:url(photo/indx.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+}
+
+ .search-box {
+  
+      backdrop-filter: blur(2px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      margin: 100px auto;
+      text-align: center;
+      box-shadow: 1px 2px 15px rgb(50, 75, 42);
+    }
+   .user-icon {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.user-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  image-rendering: auto; 
+}
+
+    .search-input {
+      margin-top: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .search-wrap {
+      background: transparent;
+      padding: 10px;
+    }
+
+    .search-card {
+      border-radius: 12px;
+      box-shadow: none;
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 8px;
+      background: #fff;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border: none;
+    }
+ .form-control{
+  border: none;
+ }
+ 
+
+ .btn-find{
+  background: linear-gradient(to right, rgb(252, 255, 251), rgb(36, 96, 5));
+  color: #ffffff;
+  border: none;
+ }
+
+
+ .btn-find:hover{
+  background: linear-gradient(to right,  rgb(36, 96, 5), rgb(255, 255, 255));
+ }
+
+
+    @media (min-width: 768px) {
+      .job-input { flex: 1 1 auto; }
+      .loc-input { max-width: 260px; flex: 0 0 260px; }
+      .btn-find { min-width: 140px; flex: 0 0 auto; }
+    }
+
+
+    @media (max-width: 767.98px) {
+      .search-row > * + * { margin-top: 8px; }
+    }
+
+  
+    .input-group-text {
+      background: transparent;
+      border: none;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+ 
+    .form-control::placeholder { color: #8d9b8e; opacity: 1; }
+
+
+</style>
+
+
+<body>
+<header class="d-flex justify-content-between px-5  fixed-top ">
+    <div>
+        <h2>JOBS</h2>
+    </div>
+    <div class="pt-2">
+        <button class="px-2 py-1">Buy Now</button>
+    </div>
+</header>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm fixed-top mt-5">
+  <div class="container ">
+   
+    <a class="navbar-brand" href="#">
+      <img src="photo/logo2.jpg" alt="Superio" class=" w-100 " height="50">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="index.html" style="color: #458740;">Home</a>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="job.html" style="color: #458740;">Find Jobs</a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link " href="employer.html" style="color: #458740;">Employers</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="candidate.html" style="color: #458740;">Candidates</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link " href="blog.html" style="color: #458740;">Blog</a>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="faqs.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+
+
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <div class="d-flex ms-lg-3">
+        <a href="#" class="log  me-2 ">Login / Register</a>
+        <a href="#" class="post ">Job Post</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid hir ">
+   <div class="container" style="padding-top: 200px;">
+     <div class="search-box pt-5 text-light w-100" >
+      <h3><i class="bi bi-search "></i> JOB Search</h3>
+      <div class="d-flex justify-content-center flex-wrap mt-4">
+        <div class="user-icon "><img src="photo/home.jpg" alt="" class="img-fluid w-100 h-100 rounded-5"></div>
+        <div class="user-icon "><img src="photo/e1.webp" alt="" class="img-fluid w-100 h-100 rounded-5"></div>
+        <div class="user-icon "><img src="photo/e2.jpg" alt="" class="img-fluid w-100 h-100 rounded-5"></div>
+      
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <div class="search-wrap p-4">
+
+      <div class="search-card">
+
+   
+        <form class="row g-0 align-items-center search-row" role="search" aria-label="Job search form">
+       
+          <div class="col-12 col-md-3   job-input">
+            <div class="input-group w-100">
+              <span class="input-group-text" id="search-addon">
+                <i class="bi bi-search" aria-hidden="true"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control rounded-start rounded-end"
+                placeholder="Job title..."
+               >
+            </div>
+          </div>
+
+       
+          <div class="col-12 col-md-2   loc-input">
+            <div class="input-group w-100">
+              <span class="input-group-text" id="loc-addon">
+                <i class="bi bi-geo-alt" aria-hidden="true"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control rounded-start rounded-end"
+                placeholder="City or postcode..."
+               >
+            </div>
+          </div>
+   <div class="col-12 col-md-12 mt-4 d-flex justify-content-center">
+            <button type="submit" class="btn btn-find w-100">
+              Find Jobs
+            </button>
+          </div>
+
+        </form>
+ 
+      </div>
+     
+    </div>
+
+    </div>
+   </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container ico my-5">
+  <div class="d-flex flex-wrap   gap-4">
+    <img src="photo/Bromley-Mencap-logo.svg" alt="Mencap" class="img-fluid" style="max-height: 80px;">
+    <img src="photo/music.webp" alt="Herbal" class="img-fluid" style="max-height: 60px;">
+    <img src="photo/Bromley-Mencap-logo.svg" alt="Mencap" class="img-fluid" style="max-height: 80px;">
+    <img src="photo/music.webp" alt="Herbal" class="img-fluid" style="max-height: 60px;">
+   
+   
+  </div>
+</div>
+
+
+<div class="container my-5 ">
+  <!-- Header -->
+  <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+    <h2 class="mb-2">Featured Jobs</h2>
+    <div class="w-auto">
+      <select class="form-select ">
+        <option>Development</option>
+        <option>Design</option>
+        <option>Marketing</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Jobs Grid -->
+  <div class="row g-4">
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+      <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/soft.png" alt="Software Engineer" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Software Engineer (Android), Libraries</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3 ">Urgent</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+      <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/recurt.jpg" alt="Recruiting Coordinator" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Product Manager, Studio</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Invision</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge b1">Part Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+        <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/tran.png" alt="Product Manager" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Senior Full Stack Engineer, Creator Success</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Medium</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge b1">Part Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+        <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/senior.png" alt="Product Manager" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Recruiting Coordinator</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Catalyst</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge b1">Part Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+        <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/ht.jpg" alt="Product Manager" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Product Manager, Studio</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Invision</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge b1">Part Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Job Card -->
+    <div class="col-12 col-md-6">
+      <div class="card job-cards p-3 h-100  border-0">
+        <div class="d-flex align-items-center mb-2">
+          <img src="photo/jjj.png" alt="Senior Product Designer" width="50" class="me-3 rounded">
+          <h5 class="mb-0">Senior Product Designer</h5>
+        </div>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+            <span><i class="bi bi-building"></i> Upwork</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2 mt-2">
+          <span class="badge b1">Temporary</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="mt-5 text-center bottun">
+  <button>Load More Listing</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5 mt-5">
+  <div class="row align-items-center">
+   
+
+
+<div class="col-md-6 mb-4 mb-md-0 position-relative">
+  <img src="photo/jlok.jpg" class="img-fluid rounded shadow" alt="Video Preview">
+  <a href="#" class="position-absolute top-50 start-50 translate-middle btn btn-outline-light rounded-circle px-4 py-3"
+    data-bs-toggle="modal" data-bs-target="#deleteModal">
+    <i class="bi bi-play-fill text-success fs-2"></i>
+  </a>
+</div>
+
+
+<!-- مودال -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+       <img src="photo/b1.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Discard</button>
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Delete</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-md-4  p-3">
+      <h2>Millions of Jobs. Find the one that suits you.</h2>
+      <p>Search all the open positions on the web. Get your own personalized salary estimate. Read reviews on over 600,000 companies worldwide.</p>
+      <ul class="list-unstyled mb-4">
+        <li><i class="fa fa-check"></i> Creative Study Pattern</li>
+        <li><i class="fa fa-check"></i> Quick Crash Courses</li>
+        <li><i class="fa fa-check"></i> Certification Awarded</li>
+        <li><i class="fa fa-check"></i> Provided with Experimental Examples</li>
+      </ul>
+      <a  class="btn btn-success shadow"    data-bs-toggle="modal" data-bs-target="#deleteModal">Watch Video</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5 mt-5 pt-5 text-center">
+  <div class="row">
+    <div class="col-4">
+      <h2 class="counter text-success" data-target="4000000">0</h2>
+      <p>4 million daily active users</p>
+    </div>
+    <div class="col-4">
+      <h2 class="counter text-success" data-target="12000">0</h2>
+      <p>Over 12k open job positions</p>
+    </div>
+    <div class="col-4">
+      <h2 class="counter text-success" data-target="20000000">0</h2>
+      <p>Over 20 million stories shared</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5">
+  <h3 class="mb-3 text-center">Top Company Registered</h3>
+  <p class="text-center text-muted mb-4">Some of the companies we have helped recruit excellent applicants over the years.</p>
+
+  <div id="companyCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row justify-content-center">
+       
+          <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/udemy.png" class="card-img-top" alt="udemy">
+              <div class="card-body p-2">
+                <h6 class="card-title">Udemy</h6>
+              </div>
+  </div>
+
+  </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/stripe.jpg" class="card-img-top rounded-5" alt="step">
+              <div class="card-body p-2">
+                <h6 class="card-title">stripe</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/drop.png" class="card-img-top" alt="Dropbox">
+              <div class="card-body p-2">
+                <h6 class="card-title">Dropbox</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/figam.webp" class="card-img-top " height="180px"  alt="figam">
+              <div class="card-body p-2">
+                <h6 class="card-title">Figma</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row justify-content-center">
+
+         
+          <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/figam.webp" class="card-img-top " height="180px"  alt="figam">
+              <div class="card-body p-2">
+                <h6 class="card-title">Figma</h6>
+              </div>
+            </div>
+          </div>
+
+
+
+
+         <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/drop.png" class="card-img-top" alt="Dropbox">
+              <div class="card-body p-2">
+                <h6 class="card-title">Dropbox</h6>
+              </div>
+            </div>
+          </div>
+
+
+        <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/stripe.jpg" class="card-img-top rounded-5" alt="step">
+              <div class="card-body p-2">
+                <h6 class="card-title">stripe</h6>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div class="col-6 col-md-2 text-center">
+            <div class="card border-0">
+              <img src="photo/udemy.png" class="card-img-top" alt="udemy">
+              <div class="card-body p-2">
+                <h6 class="card-title">Udemy</h6>
+              </div>
+  </div>
+
+  </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next ms-5" type="button" data-bs-target="#companyCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5">
+
+  <h1 class="mt-5 text-center">Popular Job Categories</h1>
+  <p class="text-center">2020 jobs live - 293 added today.</p>
+  <div class="row g-4 mt-5">
+    <!-- Job Card -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-coins fa-2x"></i></div>
+        <div class="text">
+          <h6>Accounting / Finance</h6>
+          <p class=" mb-0">(2 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-bullhorn fa-2x"></i></div>
+        <div class="text">
+          <h6>Marketing</h6>
+
+          <p class=" mb-0">(86 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-pencil-ruler fa-2x"></i></div>
+        <div class="text">
+          <h6>Design</h6>
+          <p class=" mb-0">(43 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- کارت‌های بیشتر -->
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-code fa-2x"></i></div>
+        <div class="text">
+          <h6>Human Resource</h6>
+          <p class=" mb-0">(12 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+ <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-gauge fa-2x"></i></div>
+        <div class="text">
+          <h6>Development</h6>
+          <p class=" mb-0">(12 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-person-military-pointing fa-2x"></i></div>
+        <div class="text">
+          <h6>Development</h6>
+          <p class=" mb-0">(12 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-notes-medical fa-2x"></i></div>
+        <div class="text">
+          <h6>Development</h6>
+          <p class=" mb-0">(12 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-car-side fa-2x"></i></div>
+        <div class="text">
+          <h6>Development</h6>
+          <p class=" mb-0">(12 open positions)</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="job-card d-flex align-items-center p-3 rounded  h-100">
+        <div class="icon me-3"><i class="fa-solid fa-file-lines fa-2x"></i></div>
+        <div class="text">
+          <h6>Human Resource</h6>
+          <p class=" mb-0">(55 open positions)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container my-5">
+  <h1>Featured Candidates</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+  <div class="row g-4 justify-content-between mt-5">
+
+    <!-- User 1 -->
+    <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c1.jpg" alt="Darlene Robertson" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="mb-0">Darlene Robertson</h6>
+          <small class="text-muted">UI Designer</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+      <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+
+    <!-- User 2 -->
+    <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c4.webp" alt="Wade Warren" class="rounded-circle me-3" width="60" height="60">
+<div>
+    <h6 class="mb-0">Wade Warren</h6>
+          <small class="text-muted">Developer</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+       <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+
+    <!-- User 3 -->
+    <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c2.jpg" alt="Leslie Alexander" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="mb-0">Leslie Alexander</h6>
+          <small class="text-muted">Marketing Expert</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+      <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+
+    <!-- User 4 -->
+    <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c5.jpg" alt="Floyd Miles" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="mb-0">Floyd khles</h6>
+          <small class="text-muted">Chartered Accountant</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+      <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+     <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c6.webp" alt="Floyd Miles" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="mb-0">khyan Miles</h6>
+          <small class="text-muted">Chartered Accountant</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+      <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+
+
+
+
+     <div class="col-md-5 d-flex align-items-center justify-content-between p-3 border rounded">
+      <div class="d-flex align-items-center">
+        <img src="photo/c3.jpeg" alt="Floyd Miles" class="rounded-circle me-3" width="60" height="60">
+        <div>
+          <h6 class="mb-0">Fwad kles</h6>
+          <small class="text-muted">Chartered Accountant</small><br>
+          <small class="text-muted"><i class="fa-solid fa-location-dot"></i> London, UK</small>
+        </div>
+      </div>
+      <a href="single-candidate.html"><button class="btn btn-outline-success">View Profile</button></a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- wave codes  -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#40753c" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,192C213.3,213,267,235,320,250.7C373.3,267,427,277,480,277.3C533.3,277,587,267,640,234.7C693.3,203,747,149,800,154.7C853.3,160,907,224,960,240C1013.3,256,1067,224,1120,197.3C1173.3,171,1227,149,1280,128C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+</svg>
+<footer class="text-success pt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Superio</h5>
+        <p class="mb-1">Call us</p>
+        <p class="text-secondary fw-bold">123 456 7890</p>
+        <p>329 Queenberry Street, North Melbourne VIC 3051, Australia</p>
+        <p>support@superio.com</p>
+      </div>
+
+      <!-- For Candidates -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Candidates</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Jobs</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Browse Categories</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Candidate Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Alerts</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <!-- For Employers -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Employers</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Candidates</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Employer Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Add Job</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">About Us</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Page Invoice</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms Page</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+        </ul>
+
+        </div>
+
+      <!-- Helpful Resources -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Helpful Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Site Map</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms of Use</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Security Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Accessibility Center</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="d-flex justify-content-between align-items-center py-3 border-top">
+      <p class="mb-0">&copy; 2023 Superio by Ib-themes. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-success me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-success"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script>
+  window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script
+
+
+
+
+
+<!-- JS برای انیمیشن شمارنده -->
+<script>
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText.replace(/,/g,'');
+      const increment = target / 200; // سرعت افزایش
+      if(count < target){
+        counter.innerText = Math.ceil(count + increment).toLocaleString();
+        setTimeout(updateCounter, 20);
+      } else {
+        counter.innerText = target.toLocaleString();
+      }
+    };
+    updateCounter();
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalElement = document.getElementById('videoModal');
+    const modalInstance = bootstrap.Modal.getOrCreateInstance(modalElement);
+
+    closeModalBtn.addEventListener('click', function () {
+      modalInstance.hide();
+    });
+  });
+</script>
+
+
+
+
+</body>
+</html>

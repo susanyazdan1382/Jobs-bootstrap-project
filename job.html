@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+  .navbar{
+    background-color: #ffffff;
+  }
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #478759;
+}
+.navbar .btn {
+    height: 40px;
+}
+@media(max-width: 992px){
+  .navbar-nav {
+    text-align: center;
+  }
+.navbar.btn{
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+.navbar.scrolled { 
+  box-shadow: 3px 4px 10px rgb(144, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.log{
+  background: transparent;
+  box-shadow:  1px 2px 10px rgb(91, 140, 85);
+  border: none;
+  color: #478759;
+  padding: 6px 10px;
+  border-radius: 30px ;
+  text-decoration: none;
+ 
+}
+
+
+.log:hover{
+  background-color: #629671;
+  color: #f9f9f9;
+
+}
+
+
+.post{
+  background-color: #629671;
+  color: #e9ecef;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+
+}
+.post:hover{
+  box-shadow: 1px 2px 10px rgb(91, 143, 90);
+  background: transparent;
+  color: #478759;
+}
+
+
+
+
+
+header {
+  background-color: #000000;
+  color: #629671;
+}
+
+header button{
+  background: transparent;
+  color: #629671;
+  box-shadow: 1px 2px 10px rgb(76, 130, 76);
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+header button:hover{
+  color: #021d00;
+  background-color: #478759;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .jobs {
+     
+      height: 100vh;
+      width: 100%;
+    }
+
+    /* Left side: Scrollable job cards */
+    .job-list {
+      width: 50%;
+      height: 100%;
+      overflow-y: auto;
+      padding: 20px;
+    
+    }
+
+    .job-card {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .job-card h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    /* Right side: Fixed map */
+    .map {
+      width: 50%;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       .filter-bar {
+      display: flex;
+      margin-top: 130px;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+      background: #f8f9fa;
+    }
+
+    .filter-btn {
+      border: 1px solid #c5d2df;
+      background-color: rgb(81, 165, 16);
+      padding: 6px 15px;
+      border-radius: 6px;
+      font-weight: 500;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .dropdown-select {
+      border: 1px solid #ced4da;
+      padding: 6px 12px;
+      border-radius: 6px;
+    color: rgb(19, 45, 6);
+    }
+
+
+
+
+
+
+
+.b1{
+  background-color: #79b075;
+  color: #ffffff;
+  
+}
+
+
+.b2{
+  background-color: #000000;
+  color: #e9ecef;
+}
+
+.b3{
+  background-color: rgb(85, 206, 15);
+  color: #ffffff;
+}
+
+
+
+
+
+
+.job-card a h6:hover{
+  color: #11ff00;
+}
+
+
+
+
+
+  </style>
+<body>
+<header class="d-flex justify-content-between px-5  fixed-top ">
+    <div>
+        <h2>JOBS</h2>
+    </div>
+    <div class="pt-2">
+        <button class="px-2 py-1">Buy Now</button>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm fixed-top mt-5">
+  <div class="container ">
+   
+    <a class="navbar-brand" href="#">
+      <img src="photo/logo2.jpg" alt="Superio" class=" w-100 " height="50">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html" style="color: #458740;">Home</a>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="job.html" style="color: #458740;">Find Jobs</a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link " href="employer.html" style="color: #458740;">Employers</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="candidate.html" style="color: #458740;">Candidates</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link " href="blog.html" style="color: #458740;">Blog</a>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="faqs.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+
+
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <div class="d-flex ms-lg-3">
+        <a href="#" class="log  me-2 ">Login / Register</a>
+        <a href="#" class="post ">Job Post</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<div class="filter-bar ">
+  <!-- Filter Button -->
+  <button class="filter-btn">
+    <i class="bi bi-funnel"></i> Filter
+  </button>
+
+  <!-- Sort Dropdown -->
+  <select class="dropdown-select ms-5">
+    <option selected>Sort by (default)</option>
+    <option>Newest</option>
+    <option>Oldest</option>
+
+    <option>Salary: High to Low</option>
+  </select>
+
+  <!-- Type Dropdown -->
+  <select class="dropdown-select">
+    <option selected>All</option>
+    <option>Full Time</option>
+    <option>Freelance</option>
+    <option>Part Time</option>
+  </select>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid jobs d-flex">
+    <!-- Scrollable job cards -->
+
+  <div class="job-list">
+    <div class="job-card">
+         <div class="d-flex align-items-center mb-2">
+          <img src="photo/soft.png" alt="Software Engineer" width="50" class="me-3 rounded">
+         <a href="single-job.html" style="text-decoration: none;"> <h6 class="mb-0 text-dark">Software Engineer </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+
+
+
+   
+
+
+   <div class="job-card">
+         <div class="d-flex align-items-center mb-2">
+          <img src="photo/tran.png" alt="Software Engineer" width="50" class="me-3 rounded">
+        <a href="single-job.html" style="text-decoration: none;">  <h6 class="mb-0 text-dark">Web Designer </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+
+
+  <div class="job-card">
+         <div class="d-flex align-items-center mb-2">
+          <img src="photo/senior.png" alt="Software Engineer" width="50" class="me-3 rounded">
+         <a href="single-job.html" style="text-decoration: none;"> <h6 class="mb-0 text-dark">Senior Full Stack Engineer </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+    <div class="job-card">
+         <div class="d-flex align-items-center mb-2">
+          <img src="photo/ht.jpg" alt="Software Engineer" width="50" class="me-3 rounded">
+         <a href="single-job.html" style="text-decoration: none;"> <h6 class="mb-0 text-dark">Recruiting Coordinator </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+
+    <div class="job-card">
+         <div class="d-flex align-items-center mb-2">
+          <img src="photo/jjj.png" alt="Software Engineer" width="50" class="me-3 rounded">
+         <a href="single-job.html" style="text-decoration: none;"> <h6 class="mb-0 text-dark">Product Manager </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+
+
+    
+ 
+   
+
+
+    <div class="job-card mt-5">
+         <div class="d-flex align-items-center ">
+          <img src="photo/soft.png" alt="Software Engineer" width="50" class="me-3 rounded">
+         <a href="single-job.html" style="text-decoration: none;"> <h6 class="mb-0 text-dark">Software Engineer </h6></a>
+        </div>
+     <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+         <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="badge b1">Full Time</span>
+          <span class="badge b2">Private</span>
+          <span class="badge b3">Urgent</span>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Fixed map -->
+  <div class="map h-100">
+    <iframe src="https://maps.google.com/maps?q=London&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+</div>
+
+</body>
+</html>

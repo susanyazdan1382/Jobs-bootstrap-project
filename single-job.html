@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+
+
+  .navbar{
+    background-color: #ffffff;
+  }
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #478759;
+}
+.navbar .btn {
+    height: 40px;
+}
+@media(max-width: 992px){
+  .navbar-nav {
+    text-align: center;
+  }
+.navbar.btn{
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+.navbar.scrolled { 
+  box-shadow: 3px 4px 10px rgb(144, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.log{
+  background: transparent;
+  box-shadow:  1px 2px 10px rgb(91, 140, 85);
+  border: none;
+  color: #478759;
+  padding: 6px 10px;
+  border-radius: 30px ;
+  text-decoration: none;
+ 
+}
+
+
+.log:hover{
+  background-color: #629671;
+  color: #f9f9f9;
+
+}
+
+
+.post{
+  background-color: #629671;
+  color: #e9ecef;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+
+}
+.post:hover{
+  box-shadow: 1px 2px 10px rgb(91, 143, 90);
+  background: transparent;
+  color: #478759;
+}
+
+
+
+
+
+header {
+  background-color: #000000;
+  color: #629671;
+}
+
+header button{
+  background: transparent;
+  color: #629671;
+  box-shadow: 1px 2px 10px rgb(76, 130, 76);
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+header button:hover{
+  color: #021d00;
+  background-color: #478759;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    .tag {
+      font-size: 12px;
+      border-radius: 20px;
+      padding: 4px 10px;
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    .fulltime { background-color: #021957; color: white; }
+    .private { background-color: #4a8059; color: #f0fffa; }
+    .urgent { background-color: #6b0e34; color: #ffffff; }
+
+    .job-logo {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .apply-btn {
+      white-space: nowrap;
+    }
+
+
+
+
+
+   .job-overview i {
+      width: 20px;
+      color: #96b394;
+      font-weight: bold;
+    }
+
+
+
+
+
+
+.Overview{
+ box-shadow: inset 1px 2px 40px rgb(175, 210, 172);
+ border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+  .job-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .job-badges span {
+      margin-right: 5px;
+    }
+    .company-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .company-card img {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+
+<body>
+
+
+<header class="d-flex justify-content-between px-5  fixed-top ">
+    <div>
+        <h2>JOBS</h2>
+    </div>
+    <div class="pt-2">
+        <button class="px-2 py-1">Buy Now</button>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm fixed-top mt-5">
+  <div class="container ">
+   
+    <a class="navbar-brand" href="#">
+      <img src="photo/logo2.jpg" alt="Superio" class=" w-100 " height="50">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html" style="color: #458740;">Home</a>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="job.html" style="color: #458740;">Find Jobs</a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link " href="employer.html" style="color: #458740;">Employers</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="candidate.html" style="color: #458740;">Candidates</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link " href="blog.html" style="color: #458740;">Blog</a>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="faqs.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+
+
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <div class="d-flex ms-lg-3">
+        <a href="#" class="log  me-2 ">Login / Register</a>
+        <a href="#" class="post ">Job Post</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<div class="container mt-5 pt-5">
+  <div class="card p-5 mt-5">
+    <div class="row align-items-center gy-3">
+      
+      <!-- Logo -->
+      <div class="col-md-1 col-auto">
+        <img src="photo/soft.png" alt="Company Logo" class="job-logo">
+      </div>
+
+      <!-- Job Info -->
+      <div class="col-md-9 col-sm-9">
+        <h6 class="mb-1">Software Engineer (Android), Libraries</h6>
+        <div class="mb-2 text-muted small d-flex flex-wrap gap-3">
+          <span><i class="bi bi-building"></i> Segment</span>
+          <span><i class="bi bi-geo-alt"></i> London, UK</span>
+          <span><i class="bi bi-clock"></i> 11 hours ago</span>
+          <span><i class="bi bi-currency-dollar"></i> 35k -45k</span>
+        </div>
+        <div class="mt-4 ">
+          <span class="tag fulltime">Full Time</span>
+          <span class="tag private">Private</span>
+          <span class="tag urgent">Urgent</span>
+        </div>
+      </div>
+
+      <!-- Apply Button -->
+      <div class="col-md-2 col-sm-3 ">
+        <button class="btn btn-success apply-btn">Apply For Job </button> 
+      <i class="fa-brands fa-studiovinari ms-3 fs-3 text-success"></i>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    
+    <!-- Left Column: Job Description -->
+    <div class="col-lg-8 mb-4">
+      <h5 class="mb-3">Job Description</h5>
+      <p>
+        As a Product Designer, you will work within a Product Delivery Team fused with UX, engineering, product and data talent. You will help the team design beautiful interfaces that solve business challenges for our clients. We work with a number of Tier 1 banks on building web-based applications for AML, KYC and Sanctions List management workflows. This role is ideal if you are looking to segue your career into the FinTech or Big Data arenas.
+      </p>
+
+      <h6 class="mt-4">Key Responsibilities</h6>
+<ul>
+  <li>Be involved in every step of the product design cycle from discovery to developer handoff and user acceptance testing.</li>
+        <li>Work with BAs, product managers and tech teams to lead the Product Design.</li>
+        <li>Maintain quality of the design process and ensure that when designs are translated into code they accurately reflect the design specifications.</li>
+        <li>Accurately estimate design tickets during planning sessions.</li>
+        <li>Contribute to sketching sessions involving non-designers.</li>
+      </ul>
+    </div>
+
+    <!-- Right Column: Job Overview -->
+    <div class="col-lg-4 Overview p-3">
+      <h5 class="mb-3">Job Overview</h5>
+      <ul class="list-unstyled job-overview">
+        <li class="mb-2"><i class="bi bi-calendar-event"></i> <strong class="ms-2">Date Posted:</strong> </li><span class="ms-4">1 hour ago</span>
+        <li class="mt-3"><i class="bi bi-hourglass"></i> <strong class="ms-2">Expiration date:</strong> </li><span class="ms-4">April 06, 2021</span>
+        <li class="mt-3"><i class="bi bi-geo-alt"></i> <strong class="ms-2">Location:</strong> </li><span class="ms-4">London, UK</span>
+        <li class="mt-3"><i class="bi bi-person-badge"></i> <strong class="ms-2">Job Title:</strong> </li><span class="ms-4">Designer</span>
+        <li class="mt-3"><i class="bi bi-clock"></i> <strong class="ms-2">Hours:</strong> </li><span class="ms-4">50h / week</span>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+  <div class="row">
+
+    <!-- Left Column -->
+    <div class="col-lg-8 mb-4">
+      <h5>Skill & Experience</h5>
+      <ul>
+        <li>You have at least 3 years’ experience working as a Product Designer.</li>
+        <li>You have experience using Sketch and InVision or Framer X.</li>
+        <li>You have some previous experience working in an agile environment – Think two-week sprints.</li>
+        <li>You are familiar using Jira and Confluence in your workflow.</li>
+      </ul>
+
+      <div class="mt-4">
+        <span class="me-2">Share this job:</span>
+        <button class="btn btn-primary btn-sm">Facebook</button>
+        <button class="btn btn-dark btn-sm text-white">Twitter</button>
+
+        <button class="btn btn-info text-light btn-sm">LinkedIn</button>
+      </div>
+
+      <div class="mt-5">
+        <h5>Related Jobs</h5>
+        <p>2020 jobs live - 293 added today</p>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4 bg-light p-4 rounded-3">
+      <h6>Job Location</h6>
+      <div class="ratio ratio-4x3 mb-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19895.699632831176!2d-0.1357!3d51.509865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b333a1e9e6d%3A0xbfc1a3df99f3faae!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1639483274827!5m2!1sen!2s"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <h6>Job Skills</h6>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge bg-secondary">app</span>
+        <span class="badge bg-info">administrative</span>
+        <span class="badge bg-primary">android</span>
+        <span class="badge bg-danger">wordpress</span>
+        <span class="badge bg-success">design</span>
+        <span class="badge bg-light">react</span>
+      </div>
+
+
+      
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- Job Listings -->
+    <div class="col-lg-8">
+      <!-- Job Card -->
+      <div class="job-card d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <img src="photo/slid2.webp" class="me-3 w-25" alt="Logo" >
+          <div>
+            <h6 class="mb-1">Senior Product Designer</h6>
+            <small class="text-muted">Upwork · London, UK · 11 hours ago · 35k -45k</small>
+            <div class="job-badges mt-1">
+              <span class="badge bg-primary">Temporary</span>
+              <span class="badge bg-success">Private</span>
+              <span class="badge bg-warning text-dark">Urgent</span>
+            </div>
+          </div>
+        </div>
+        <span class="text-muted">🔖</span>
+      </div>
+
+      <div class="job-card d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <img src="photo/jlok.jpg" class="me-3 w-25" alt="Logo">
+          <div>
+            <h6 class="mb-1">Senior Full Stack Engineer, Creator Success</h6>
+            <small class="text-muted">Medium · London, UK · 11 hours ago · 35k -45k</small>
+            <div class="job-badges mt-1">
+              <span class="badge bg-primary">Full Time</span>
+              <span class="badge bg-success">Private</span>
+              <span class="badge bg-warning text-dark">Urgent</span>
+            </div>
+          </div>
+        </div>
+        <span class="text-muted">🔖</span>
+      </div>
+
+      <div class="job-card d-flex justify-content-between align-items-center">
+        <div class="d-flex">
+          <img src="photo/slid4.jpg" class="me-3 w-25" alt="Logo">
+          <div>
+
+            <h6 class="mb-1">Software Engineer (Android), Libraries</h6>
+            <small class="text-muted">Figma · London, UK · 11 hours ago · 35k -45k</small>
+            <div class="job-badges mt-1">
+              <span class="badge bg-info text-dark">Freelancer</span>
+              <span class="badge bg-success">Private</span>
+              <span class="badge bg-warning text-dark">Urgent</span>
+            </div>
+          </div>
+        </div>
+        <span class="text-muted">🔖</span>
+      </div>
+    </div>
+
+    <!-- Company Info -->
+    <div class="col-lg-4">
+      <div class="company-card">
+        <div class="d-flex align-items-center mb-3">
+          <img src="photo/stripe.jpg" class="me-2 h-50" alt="Company Logo">
+          <div>
+            <strong>Segment</strong><br />
+           
+          </div>
+        </div>
+        <p><strong>Primary industry:</strong> Software</p>
+        <p><strong>Company size:</strong> 501-1,000</p>
+        <p><strong>Founded in:</strong> 2011</p>
+        <p><strong>Phone:</strong> 123 456 7890</p>
+        <p><strong>Email:</strong> info@joio.com</p>
+        <p><strong>Location:</strong> London, UK</p>
+        <div class="row">
+
+          <div class="col-md-7"> <p><strong>Social media:</strong></p></div>
+         
+      <div class="col-md-5">
+            <a href="#" class="text-primary me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-danger me-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-info"><i class="fab fa-linkedin-in"></i></a>
+ 
+      </div>
+        </div>
+        <a href="" class="btn btn-outline-success w-100 mt-2">https://segment.com</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- wave codes  -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#40753c" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,192C213.3,213,267,235,320,250.7C373.3,267,427,277,480,277.3C533.3,277,587,267,640,234.7C693.3,203,747,149,800,154.7C853.3,160,907,224,960,240C1013.3,256,1067,224,1120,197.3C1173.3,171,1227,149,1280,128C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+</svg>
+<footer class="text-success pt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Superio</h5>
+        <p class="mb-1">Call us</p>
+        <p class="text-secondary fw-bold">123 456 7890</p>
+        <p>329 Queenberry Street, North Melbourne VIC 3051, Australia</p>
+        <p>support@superio.com</p>
+      </div>
+
+      <!-- For Candidates -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Candidates</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Jobs</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Browse Categories</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Candidate Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Alerts</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <!-- For Employers -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Employers</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Candidates</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Employer Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Add Job</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">About Us</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Page Invoice</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms Page</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+        </ul>
+
+        </div>
+
+      <!-- Helpful Resources -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Helpful Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Site Map</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms of Use</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Security Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Accessibility Center</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="d-flex justify-content-between align-items-center py-3 border-top">
+      <p class="mb-0">&copy; 2023 Superio by Ib-themes. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-success me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-success"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+<style>
+
+
+
+  .navbar{
+    background-color: #ffffff;
+  }
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #478759;
+}
+.navbar .btn {
+    height: 40px;
+}
+@media(max-width: 992px){
+  .navbar-nav {
+    text-align: center;
+  }
+.navbar.btn{
+    margin-top: 0.5rem;
+  }
+}
+
+
+
+.navbar.scrolled { 
+  box-shadow: 3px 4px 10px rgb(144, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.log{
+  background: transparent;
+  box-shadow:  1px 2px 10px rgb(91, 140, 85);
+  border: none;
+  color: #478759;
+  padding: 6px 10px;
+  border-radius: 30px ;
+  text-decoration: none;
+ 
+}
+
+
+.log:hover{
+  background-color: #629671;
+  color: #f9f9f9;
+
+}
+
+
+.post{
+  background-color: #629671;
+  color: #e9ecef;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+
+}
+.post:hover{
+  box-shadow: 1px 2px 10px rgb(91, 143, 90);
+  background: transparent;
+  color: #478759;
+}
+
+
+
+
+
+header {
+  background-color: #000000;
+  color: #629671;
+}
+
+header button{
+  background: transparent;
+  color: #629671;
+  box-shadow: 1px 2px 10px rgb(76, 130, 76);
+  border: none;
+  border-radius: 30px;
+}
+
+
+
+header button:hover{
+  color: #021d00;
+  background-color: #478759;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .pagination .page-link {
+  border-radius: 10px;
+  margin: 60px 5px;
+  color: #4ca412;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0c851b;
+  color: #fff;
+  border-color: #2aab2a;
+}
+
+.pagination .page-link:hover {
+  background-color: #177310;
+  color: #fff;
+}
+</style>
+<body>
+<header class="d-flex justify-content-between px-5  fixed-top ">
+    <div>
+        <h2>JOBS</h2>
+    </div>
+    <div class="pt-2">
+        <button class="px-2 py-1">Buy Now</button>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-lg navbar-light  shadow-sm fixed-top mt-5">
+  <div class="container ">
+   
+    <a class="navbar-brand" href="#">
+      <img src="photo/logo2.jpg" alt="Superio" class=" w-100 " height="50">
+    </a>
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a class="nav-link " href="index.html" style="color: #458740;">Home</a>
+        </li>
+
+
+
+
+        <li class="nav-item">
+          <a class="nav-link " href="job.html" style="color: #458740;">Find Jobs</a>
+        </li>
+
+
+
+        
+        <li class="nav-item">
+          <a class="nav-link " href="employer.html" style="color: #458740;">Employers</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link fw-bold active" href="candidate.html" style="color: #458740;">Candidates</a>
+        </li>
+
+         <li class="nav-item">
+          <a class="nav-link " href="blog.html" style="color: #458740;">Blog</a>
+        </li>
+
+
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle mx-2" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About</a></li>
+            <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+            <li><a class="dropdown-item" href="faqs.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="terms.html">Terms</a></li>
+            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+
+
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <div class="d-flex ms-lg-3">
+        <a href="#" class="log  me-2 ">Login / Register</a>
+        <a href="#" class="post ">Job Post</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<div class="container-fluid " style="margin-top: 150px;">
+  <div class="row">
+    <!-- Sidebar Filters -->
+    <div class="col-lg-3 mb-5">
+      <div class="p-3 bg-light rounded">
+        <h5>Search by Keywords</h5>
+        <input type="text" class="form-control mb-3" placeholder="Job title, keywords, or company">
+
+        <h6>Location</h6>
+        <input type="text" class="form-control mb-2" placeholder="City or postcode">
+        <label class="form-label">Radius around selected destination</label>
+        <input type="range" class="form-range">
+        <div class="text-center mb-3">100km</div>
+
+        <h6>Category</h6>
+        <select class="form-select mb-3">
+          <option>Choose a category</option>
+          <option>Design</option>
+          <option>Development</option>
+        </select>
+
+        <h6>Candidate Gender</h6>
+        <select class="form-select">
+          <option>Any</option>
+
+
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+
+
+
+<div class="text-center my-5 ">
+    <button class="btn btn-outline-success">100 km</button>
+</div>
+      </div>
+    </div>
+
+    <!-- Profile Cards -->
+    <div class="col-lg-9">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div><strong>10</strong> jobs</div>
+        <div class="d-flex gap-2">
+          <select class="form-select">
+            <option>Sort by (default)</option>
+            <option>Price low to high</option>
+            <option>Price high to low</option>
+          </select>
+          <select class="form-select">
+            <option>All</option>
+            <option>Design</option>
+            <option>App</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Profile Card -->
+      <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://i.pravatar.cc/80?img=11" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-1">Darlene Robertson</h6>
+            <div class="text-muted small mb-1">
+              <a href="#" class="text-success text-decoration-none">UI Designer</a> · 
+              <i class="bi bi-geo-alt"></i> London, UK ·
+              <i class="bi bi-cash-stack"></i> 99 / hour
+            </div>
+            <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+          </div>
+        </div>
+       <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+
+
+
+
+
+
+        <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="photo/w6.jpg" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-1">Darlene Robertson</h6>
+            <div class="text-muted small mb-1">
+              <a href="#" class="text-success text-decoration-none">UI Designer</a> · 
+              <i class="bi bi-geo-alt"></i> London, UK ·
+              <i class="bi bi-cash-stack"></i> 99 / hour
+            </div>
+             <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+          </div>
+        </div>
+        <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+
+
+
+
+
+        <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="photo/w5.jpg" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-1">Darlene Robertson</h6>
+            <div class="text-muted small mb-1">
+              <a href="#" class="text-success text-decoration-none">UI Designer</a> · 
+              <i class="bi bi-geo-alt"></i> London, UK ·
+              <i class="bi bi-cash-stack"></i> 99 / hour
+            </div>
+             <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+          </div>
+        </div>
+        <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!– Repeat card with different user –>
+      <div class="bg-white rounded shadow-sm p-3 mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://i.pravatar.cc/80?img=12" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-1">Wade Warren</h6>
+            <div class="text-muted small mb-1">
+              <a href="#" class="text-success text-decoration-none">Developer</a> · 
+              <i class="bi bi-geo-alt"></i> London, UK · 
+              <i class="bi bi-cash-stack"></i>94 / hour
+            </div>
+            <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+          </div>
+        </div>
+        <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- Sidebar Filters -->
+    <div class="col-lg-3 mb-4">
+      <div class="bg-light p-4 rounded">
+        <h6 class="fw-bold mb-3">Date Posted</h6>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="date" id="all">
+          <label class="form-check-label" for="all">All</label>
+        </div>
+        <div class="form-check mb-2"><input class="form-check-input" type="radio" name="date"> Last Hour</div>
+        <div class="form-check mb-2"><input class="form-check-input" type="radio" name="date"> Last 24 Hour</div>
+        <div class="form-check mb-2"><input class="form-check-input" type="radio" name="date"> Last 7 Days</div>
+        <div class="form-check mb-2"><input class="form-check-input" type="radio" name="date"> Last 14 Days</div>
+
+        <div class="form-check mb-4"><input class="form-check-input" type="radio" name="date"> Last 30 Days</div>
+
+        <h6 class="fw-bold mb-3">Experience</h6>
+        <div class="form-check form-switch mb-2"><input class="form-check-input" type="checkbox"> Fresh</div>
+        <div class="form-check form-switch mb-2"><input class="form-check-input" type="checkbox"> 1 Year</div>
+        <div class="form-check form-switch mb-2"><input class="form-check-input" type="checkbox"> 2 Year</div>
+        <div class="form-check form-switch mb-2"><input class="form-check-input" type="checkbox"> 3 Year</div>
+        <div class="form-check form-switch"><input class="form-check-input" type="checkbox"> 4 Year</div>
+      </div>
+    </div>
+
+    <!-- Profile Cards -->
+    <div class="col-lg-9">
+      <!-- Card 1 -->
+      <div class="bg-white p-3 rounded shadow-sm mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://i.pravatar.cc/80?img=2" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Floyd Miles</h6>
+            <small class="text-success d-block">Charted Accountant</small>
+
+            <small class="text-muted"><i class="bi bi-geo-alt"></i> London, UK · <i class="bi bi-cash-stack"></i> 88 / hour</small>
+            <div class="mt-2">
+              <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+            </div>
+          </div>
+        </div>
+       <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+      <!– Card 2 –>
+      <div class="bg-white p-3 rounded shadow-sm mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://i.pravatar.cc/80?img=3" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Darlene Robertson</h6>
+            <small class="text-success d-block">UI Designer</small>
+            <small class="text-muted"><i class="bi bi-geo-alt"></i> London, UK · <i class="bi bi-cash-stack"></i>77 / hour</small>
+            <div class="mt-2">
+            <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+            </div>
+          </div>
+        </div>
+       <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-3 rounded shadow-sm mb-3 d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <img src="https://i.pravatar.cc/80?img=5" class="rounded-circle me-3" width="60" height="60">
+          <div>
+            <h6 class="mb-0">Wade Warren</h6>
+            <small class="text-success d-block">Developer</small>
+            <small class="text-muted"><i class="bi bi-geo-alt"></i> London, UK · <i class="bi bi-cash-stack"></i> $66 / hour</small>
+            <div class="mt-2">
+               <span class="badge bg-light text-success me-1">App</span>
+            <span class="badge bg-light text-info me-1">Design</span>
+            <span class="badge bg-light text-danger">Digital</span>
+            </div>
+          </div>
+        </div>
+        <a href="single-candidate.html"> <button class="btn btn-outline-success">View Profile</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      <!-- Bootstrap 5 Pagination -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center flex-wrap">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- wave codes  -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#40753c" fill-opacity="1" d="M0,128L26.7,138.7C53.3,149,107,171,160,192C213.3,213,267,235,320,250.7C373.3,267,427,277,480,277.3C533.3,277,587,267,640,234.7C693.3,203,747,149,800,154.7C853.3,160,907,224,960,240C1013.3,256,1067,224,1120,197.3C1173.3,171,1227,149,1280,128C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+</svg>
+<footer class="text-success pt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Contact Info -->
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Superio</h5>
+        <p class="mb-1">Call us</p>
+        <p class="text-secondary fw-bold">123 456 7890</p>
+        <p>329 Queenberry Street, North Melbourne VIC 3051, Australia</p>
+        <p>support@superio.com</p>
+      </div>
+
+      <!-- For Candidates -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Candidates</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Jobs</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Browse Categories</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Candidate Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Alerts</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">My Bookmarks</a></li>
+        </ul>
+      </div>
+
+      <!-- For Employers -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">For Employers</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Browse Candidates</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Employer Dashboard</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Add Job</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Packages</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div class="col-md-2 mb-4">
+        <h6 class="fw-bold">About Us</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">About Us</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Job Page Invoice</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms Page</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+        </ul>
+
+        </div>
+
+      <!-- Helpful Resources -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">Helpful Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-dark text-decoration-none">Site Map</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Terms of Use</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Privacy Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Security Center</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Accessibility Center</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="d-flex justify-content-between align-items-center py-3 border-top">
+      <p class="mb-0">&copy; 2023 Superio by Ib-themes. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-success me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-success me-3"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="text-success"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
